@@ -638,6 +638,9 @@ figure {
 #section3 .works_item {
   padding-top: 80px;
 }
+#section3 .works_item img {
+  width:70px;
+}
 
 #section3 hr {
     margin-top: 1rem;
@@ -663,3 +666,4 @@ figure {
 .btn-lg {
   font-size: 2rem;
 }
+
