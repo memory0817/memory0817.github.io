@@ -19,8 +19,8 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sintony", sans-serif;
-  color: #eaf2e3;
-  background-color: #3a2c41;
+  color: #eeeee5;
+  background-color: #c0a672;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -236,10 +236,10 @@ Vertical navigation
     margin: 1.4em auto;
     border-bottom: none;
     font-size: 1.2rem;
-    color: #eaf2e3;
+    color: #eeeee5;
   }
   .cd-vertical-nav a.active {
-    color: #eaf2e3;
+    color: #eeeee5;
   }
   .cd-vertical-nav a::before, .cd-vertical-nav a::after {
     /* used to create the filled circle and the background icon */
@@ -261,7 +261,7 @@ Vertical navigation
     height: 32px;
     width: 32px;
     border-radius: 50%;
-    background: #eaf2e3;
+    background: #eeeee5;
     -webkit-transform: translateX(-50%) scale(0.25);
     -moz-transform: translateX(-50%) scale(0.25);
     -ms-transform: translateX(-50%) scale(0.25);
@@ -500,7 +500,7 @@ no-js
 .no-js .cd-vertical-nav a {
   padding: 0 1em;
   margin: 1.5em 1em;
-  color: #eaf2e3;
+  color: #eeeee5;
 }
 .no-js .cd-vertical-nav a.active {
   color: #c0a672;
@@ -583,7 +583,7 @@ figure {
 
 #intro p {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: rgb(234, 242, 227);
   text-align: left;
   margin-top: 10px;
@@ -609,7 +609,7 @@ figure {
 
 #section3 h3{
   display: inline-block;
-  font-size: 24px;
+  font-size: 3rem;
 }
 
 #section3 p {
@@ -623,6 +623,14 @@ figure {
 #section3 .Messenger-caption {
   margin: 15px 0;
 }
+
+
+#section3 .color {
+  color:rgb(176, 152, 105);
+}
+
+
+
 #section3 .before {
     color: rgb(176, 152, 105);
     display: inline-block;
