@@ -6,15 +6,63 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="./css/carouseller.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link rel="stylesheet" href="./css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="./css/style.css"> <!-- Resource style -->
-	<script src="./js/modernizr.js"></script> <!-- Modernizr -->
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+	<!-- slick -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+		<!-- slick -->
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style type="text/css">
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
 
+	* {
+		box-sizing: border-box;
+	}
+
+	.slider {
+			width: 50%;
+			margin: 100px auto;
+	}
+
+	.slick-slide {
+		margin: 0px 20px;
+	}
+
+	.slick-slide img {
+		width: 100%;
+	}
+
+	.slick-prev:before,
+	.slick-next:before {
+		color: rgb(176, 152, 105);
+	}
+
+
+	.slick-slide {
+		transition: all ease-in-out .3s;
+		opacity: .2;
+	}
+
+	.slick-active {
+		opacity: .5;
+	}
+
+	.slick-current {
+		opacity: 1;
+	}
+</style>
 	<title>Portfolio | KHR</title>
 </head>
 <body>
@@ -127,41 +175,38 @@
 				<span class="before">01.</span>
 				<h3>Messenger</h3>
 				<div class="Messenger-caption">
-					<p>Java를 활용하여 메신저프로그램을 만들어 보았습니다.</p>
-	 				<p>JavaFX와 Scene Builder를 이용하여 전체적인 UI,UX를</p>
+					<p><span class="color">Java</span>를 활용하여 메신저프로그램을 만들어 보았습니다.</p>
+	 				<p><span class="color">JavaFX</span>와 <span class="color">Scene Builder</span>를 이용하여 전체적인 UI,UX를</p>
 					<p>만들었습니다.</p>
 				</div>
-				<div class="d-flex justify-content-center">
+				<div class="d-flex justify-content-start">
 					<a href="https://youtu.be/naazH8G1wG0" target="_blank" class="btn btn-outline-warning btn-lg mr-3">Demo</a>
 					<a href="https://github.com/memory0817/messenger" target="_blank" class="btn btn-outline-warning btn-lg">Repos</a>
 				</div>
 			</div>
 		</div>
 
-		<div class="works_item alignleft clear">
-			<div class="carouseller row-fluid for-car">
-				<div class="carousel-wrapper">
-					<div class="carousel-items">
-						<div class="span3 carousel-block">
-							<h2 class="img-fluid"><img class="img-circle img-fluid" src="img/sts.png"></h2>
-						</div>
-						<div class="span3 carousel-block">
-							<h2 class="img-fluid"><img class="img-circle img-fluid" src="img/sql_database.png"></h2>
-						</div>
-						<div class="span3 carousel-block">
-							<h2 class="img-fluid"><img class="img-circle img-fluid" src="img/SceneBuilderLogo.png"></h2>
-						</div>
-						<div class="span3 carousel-block">
-							<h2 class="img-fluid"><img class="img-circle img-fluid" src="img/atom4logo.png"></h2>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="carousel-control-block">
-					<div class="carousel-button-left"><a href="javascript:void(0)">‹</a></div>
-					<div class="carousel-button-right"><a href="javascript:void(0)">›</a></div>
-				</div> -->
-			</div>
-		</div>
+		<section class="center slider">
+	    <div>
+	      <img src="img/sts.png">
+	    </div>
+	    <div>
+	      <img src="img/sql_database.png">
+	    </div>
+	    <div>
+	      <img src="img/SceneBuilderLogo.png">
+	    </div>
+	    <div>
+	      <img src="img/atom4logo.png">
+	    </div>
+	    <div>
+	      <img src="img/java.png">
+	    </div>
+	    <div>
+	      <img src="img/oracle.png">
+	    </div>
+	  </section>
+
 
 
 		<div class="row">
@@ -170,45 +215,50 @@
 				<span class="before">02.</span>
 				<h3>WEB PAGE</h3>
 				<div class="Messenger-caption">
-					<p>Spring Frame Work, Spring Security를 활용하여</p>
+					<p><span class="color">Spring Frame Work, Spring Security</span>를 활용하여</p>
 					<p>웹페이지를 만들었습니다. </p>
-					<p>oracle DB는 MyBatis를 통해 연동하였습니다. </p>
-					<p>Bootstrap4를 기반으로 제작되었고,</p>
-					<p>AJAX와 Restful, Jquery도 활용하여 </p>
+					<p><span class="color">oracle DB</span>는 <span class="color">MyBatis</span>를 통해 연동하였습니다. </p>
+					<p><span class="color">Bootstrap4</span>를 기반으로 제작되었고,</p>
+					<p><span class="color">AJAX</span>와 <span class="color">Restful, Jquery</span>도 활용하여 </p>
 					<p>전체적인 UI,UX를 만들었습니다.</p>
 				</div>
-				<div class="d-flex justify-content-center">
+				<div class="d-flex justify-content-start">
 					<a href="https://youtu.be/7MHDjh20HNs" target="_blank" class="btn btn-outline-warning btn-lg mr-3">Demo</a>
 					<a href="https://github.com/memory0817/spring" target="_blank" class="btn btn-outline-warning btn-lg">Repos</a>
 				</div>
 			</div>
 		</div>
 
+		<section class="center slider">
+	    <div>
+	      <img src="img/java.png">
+	    </div>
+	    <div>
+	      <img src="img/sts.png">
+	    </div>
+	    <div>
+	      <img src="img/mybatis.png">
+	    </div>
+	    <div>
+	      <img src="img/bootstrap_stack.png">
+	    </div>
+	    <div>
+	      <img src="img/sql_database.png">
+	    </div>
+	    <div>
+	      <img src="img/AJAX_logo.png">
+	    </div>
+	    <div>
+	      <img src="img/oracle.png">
+	    </div>
+	    <div>
+	      <img src="img/atom4logo.png">
+	    </div>
+	    <div>
+	      <img src="img/Tomcat-logo.png">
+	    </div>
+	  </section>
 
-		<div class="works_item alignleft clear">
-			<div class="carouseller row-fluid for-car">
-				<div class="carousel-wrapper">
-					<div class="carousel-items">
-						<div class="span3 carousel-block">
-							<h2><img class="img-circle" src="img/sts.png"></h2>
-						</div>
-						<div class="span3 carousel-block">
-							<h2><img class="img-circle" src="img/sql_database.png"></h2>
-						</div>
-						<div class="span3 carousel-block">
-							<h2><img class="img-circle" src="img/mybatis.png"></h2>
-						</div>
-						<div class="span3 carousel-block">
-							<h2><img class="img-circle" src="img/bootstrap_stack.png"></h2>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="carousel-control-block">
-					<div class="carousel-button-left"><a href="javascript:void(0)">‹</a></div>
-					<div class="carousel-button-right"><a href="javascript:void(0)">›</a></div>
-				</div> -->
-			</div>
-		</div>
 
 
 
@@ -217,47 +267,56 @@
 			<div class="col gallery-image img-fluid"><img class="img-fluid" src="img/Project.png" /></div>
 			<div class="col gallery-caption">
 				<span class="before">03.</span>
-				<h3>Project WEBPAGE</h3>
+				<h3>LKH Project</h3>
 				<div class="Messenger-caption">
-					<p>Spring Frame Work, Spring Security를 활용하여</p>
-					<p>프로젝트 웹페이지를 만들었습니다. </p>
-					<p>oracle DB는 MyBatis를 통해 연동하였습니다. </p>
-					<p>Bootstrap4를 기반으로 제작되었고,</p>
-					<p>AJAX와 Restful, Jquery도 활용하여 </p>
+					<p><span class="color">Spring Frame Work, Spring Security</span>를 활용하여</p>
+					<p>웹페이지를 만들었습니다. </p>
+					<p><span class="color">oracle DB</span>는 <span class="color">MyBatis</span>를 통해 연동하였습니다. </p>
+					<p><span class="color">Bootstrap4</span>를 기반으로 제작되었고,</p>
+					<p><span class="color">AJAX</span>와 <span class="color">Restful, Jquery</span>도 활용하여 </p>
 					<p>전체적인 UI,UX를 만들었습니다.</p>
 					<p>전체 홈디자인과 게시판부분을 맡았습니다.</p>
 				</div>
-				<div class="d-flex justify-content-center">
+				<div class="d-flex justify-content-start">
 					<a href="https://youtu.be/mLmal7KWXp8" target="_blank" class="btn btn-outline-warning btn-lg mr-3">Demo</a>
 					<a href="https://github.com/memory0817/project" target="_blank" class="btn btn-outline-warning btn-lg">Repos</a>
 				</div>
 			</div>
 		</div>
 
-		<div class="works_item alignleft clear">
-			<div class="carouseller row-fluid for-car">
-				<div class="carousel-wrapper">
-					<div class="carousel-items">
-						<div class="span3 carousel-block">
-							<h2><img class="img-circle" src="img/sts.png"></h2>
-						</div>
-						<div class="span3 carousel-block">
-							<h2><img class="img-circle" src="img/sql_database.png"></h2>
-						</div>
-						<div class="span3 carousel-block">
-							<h2><img class="img-circle" src="img/mybatis.png"></h2>
-						</div>
-						<div class="span3 carousel-block">
-							<h2><img class="img-circle" src="img/AJAX_logo.png"></h2>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="carousel-control-block">
-					<div class="carousel-button-left"><a href="javascript:void(0)">‹</a></div>
-					<div class="carousel-button-right"><a href="javascript:void(0)">›</a></div>
-				</div> -->
+		<section class="center slider">
+			<div>
+	      <img src="img/sts.png">
+	    </div>
+			<div>
+				<img src="img/junit5-logo.png">
 			</div>
-		</div>
+	    <div>
+	      <img src="img/java.png">
+	    </div>
+	    <div>
+	      <img src="img/mybatis.png">
+	    </div>
+	    <div>
+	      <img src="img/bootstrap_stack.png">
+	    </div>
+	    <div>
+	      <img src="img/sql_database.png">
+	    </div>
+	    <div>
+	      <img src="img/AJAX_logo.png">
+	    </div>
+	    <div>
+	      <img src="img/oracle.png">
+	    </div>
+	    <div>
+	      <img src="img/atom4logo.png">
+	    </div>
+	    <div>
+	      <img src="img/Tomcat-logo.png">
+	    </div>
+		</section>
+
 
 		</div>
 	</div>
@@ -268,13 +327,67 @@
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src="js/carouseller.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-$(function() {
-	carouseller = new carousel('.carouseller');
-});
+	$(document).on('ready', function() {
+		$(".vertical-center-4").slick({
+			dots: true,
+			vertical: true,
+			centerMode: true,
+			slidesToShow: 4,
+			slidesToScroll: 2
+		});
+		$(".vertical-center-3").slick({
+			dots: true,
+			vertical: true,
+			centerMode: true,
+			slidesToShow: 3,
+			slidesToScroll: 3
+		});
+		$(".vertical-center-2").slick({
+			dots: true,
+			vertical: true,
+			centerMode: true,
+			slidesToShow: 2,
+			slidesToScroll: 2
+		});
+		$(".vertical-center").slick({
+			dots: true,
+			vertical: true,
+			centerMode: true,
+		});
+		$(".vertical").slick({
+			dots: true,
+			vertical: true,
+			slidesToShow: 3,
+			slidesToScroll: 3
+		});
+		$(".regular").slick({
+			dots: true,
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 3
+		});
+		$(".center").slick({
+			dots: true,
+			infinite: true,
+			centerMode: true,
+			slidesToShow: 5,
+			slidesToScroll: 3
+		});
+		$(".variable").slick({
+			dots: true,
+			infinite: true,
+			variableWidth: true
+		});
+		$(".lazy").slick({
+			lazyLoad: 'ondemand', // ondemand progressive anticipated
+			infinite: true
+		});
+	});
 </script>
 
 </body>
 </html>
+
