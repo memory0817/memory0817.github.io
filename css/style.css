@@ -637,6 +637,7 @@ figure {
 
 #section3 .works_item {
   padding-top: 80px;
+  padding-bottom: 50px;
 }
 #section3 .works_item img {
   width:70px;
@@ -652,6 +653,13 @@ figure {
 #section3 .row {
   padding-top:30px;
 }
+
+#section3 a:visited{
+  text-decoration: none;
+}
+
+
+
 .gallery-image img{
     max-width: 600px;
 }
@@ -666,4 +674,3 @@ figure {
 .btn-lg {
   font-size: 2rem;
 }
-
