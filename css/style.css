@@ -53,7 +53,7 @@ Navigation trigger - visible on small devices only
   height: 44px;
   width: 44px;
   border-radius: 0.25em;
-  background: rgba(234, 242, 227, 0.9);
+  background: #eeeee5;
   /* reset button style */
   cursor: pointer;
   -webkit-appearance: none;
