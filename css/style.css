@@ -666,7 +666,17 @@ figure {
   text-decoration: none;
 }
 
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 540px;
+  }
 
+  #section3 slider {
+    max-width: 20%;
+  }
+
+
+ }
 
 .gallery-image img{
     max-width: auto;
