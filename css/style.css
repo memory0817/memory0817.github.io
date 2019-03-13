@@ -681,8 +681,7 @@ figure {
 
   .img-fluid {
     max-width: 85%;
-    margin-bottom: 20px;
-    margin-left:10px;
+    align-self: center
   }
   
  }
