@@ -675,6 +675,9 @@ figure {
     max-width: 20%;
   }
 
+   .gallery-image {
+    display: contents;
+  }
 
  }
 
