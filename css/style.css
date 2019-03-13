@@ -686,6 +686,15 @@ figure {
     align-self: center
   }
   
+    #section3 p {
+    font-size: 17px;
+    text-align: center
+  }
+
+.justify-content-start {
+  justify-content: center!important;
+}
+  
  }
 
 .gallery-image img{
