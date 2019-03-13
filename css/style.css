@@ -680,6 +680,8 @@ figure {
   }
 
   .img-fluid {
+    margin: auto;
+    padding-bottom: 30px;
     max-width: 85%;
     align-self: center
   }
