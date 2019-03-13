@@ -757,6 +757,10 @@ figure {
     display: none;
   }
 
+   .gallery-caption {
+    text-align: center;
+  }
+  
    .gallery-image {
     display: contents;
   }
