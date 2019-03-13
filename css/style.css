@@ -671,8 +671,8 @@ figure {
     max-width: 500px;
   }
 
-  #section3 slider {
-    max-width: 20%;
+  #section3 .slider {
+    display: none;
   }
 
    .gallery-image {
