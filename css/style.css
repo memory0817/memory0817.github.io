@@ -679,6 +679,12 @@ figure {
     display: contents;
   }
 
+  .img-fluid {
+    max-width: 85%;
+    margin-bottom: 20px;
+    margin-left:10px;
+  }
+  
  }
 
 .gallery-image img{
