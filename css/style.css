@@ -832,7 +832,7 @@ figure {
  }
 
  .go-top:hover{
- 	background-color:#5DBA9D;
+ 	background-color:rgb(176, 152, 105, .6);
  	color:#FFFFFF;
  }
 
