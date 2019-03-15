@@ -751,6 +751,11 @@ figure {
 
 
 @media (max-width: 575.98px) {
+  
+   .go-top {
+    display: none!important;
+  }
+  
   .container {
     max-width: 500px;
   }
